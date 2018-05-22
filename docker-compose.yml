@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  mongodb:
+    image: 'bitnami/mongodb:latest'
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGODB_ROOT_PASSWORD=admin
+      - MONGODB_USERNAME=eshopdb
+      - MONGODB_PASSWORD=test
+      - MONGODB_DATABASE=eshopdb
+    volumes:
+      - /Users/jo98/mongodb_data/masteringspring_packtpub:/bitnami
