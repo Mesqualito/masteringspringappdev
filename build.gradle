@@ -3,7 +3,7 @@ plugins {
     id 'java'
 }
 
-group 'net.generica.spring'
+group 'net.generica.spring.masteringspringappdev'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -14,5 +14,22 @@ repositories {
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    // https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.7.0'
+    // https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb
+    compile group: 'org.springframework.data', name: 'spring-data-mongodb', version: '2.0.7.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-core
+    compile group: 'org.springframework', name: 'spring-core', version: '5.0.6.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.6.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-context-support
+    compile group: 'org.springframework', name: 'spring-context-support', version: '5.0.6.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-beans
+    compile group: 'org.springframework', name: 'spring-beans', version: '5.0.6.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-web
+    compile group: 'org.springframework', name: 'spring-web', version: '5.0.6.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.0.6.RELEASE'
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
